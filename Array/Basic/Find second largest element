@@ -1,0 +1,21 @@
+class Solution:
+    def print2largest(self,A,N): 
+        #code here
+        if N < 2:
+            return -1
+ 
+        largest = second = -2454635434;
+     
+        # Find the largest element
+        for i in range(0, N):
+            largest = max(largest, A[i]);
+     
+        # Find the second largest element
+        for i in range(0, N):
+            if (A[i] != largest):
+                second = max(second, A[i]);
+     
+        if (second == -2454635434):
+            return -1 
+        else:
+            return second 
