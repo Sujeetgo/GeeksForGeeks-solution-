@@ -1,0 +1,11 @@
+def convertFive(n):
+    # Code here
+    con = str(n)
+    empty_string = ""
+    
+    for i in range(len(con)):
+        if con[i] =="0":
+            empty_string += "5"
+        else:
+            empty_string +=con[i]
+    return empty_string  
