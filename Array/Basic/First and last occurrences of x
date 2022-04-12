@@ -1,0 +1,17 @@
+
+def find(arr,n,x):
+    # code here 
+    if x not in arr:
+        return -1, -1
+    
+    first_occr = 0
+    last_occr = 0
+    for i in range(0,n):
+        if arr[i] ==x:
+            first_occr = i
+            break
+    for i in range(n-1,-1,-1):
+        if arr[i] ==x:
+            last_occr = i
+            break
+    return first_occr, last_occr    
